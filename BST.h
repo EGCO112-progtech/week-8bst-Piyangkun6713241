@@ -108,13 +108,13 @@ void postOrder(TreeNodePtr treePtr){
    }
 }
 
-void horizontalOrder(TreeNodePtr treePtr){
+void printTree(TreeNodePtr treePtr){
    if ( treePtr != NULL ){
 
-   horizontalOrder( treePtr->rightPtr);
+   printTree( treePtr->rightPtr);
 
    printf("%3d", treePtr->data);
 
-   horizontalOrder( treePtr->leftPtr);
+   printTree( treePtr->leftPtr);
    }
 }
