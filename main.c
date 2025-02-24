@@ -8,7 +8,6 @@ int main( int argc, char** argv )
    int item; // variable to hold random values
    BST b;
 
-   
 	b.root= NULL;  b.size=0;// tree initially empty
 for ( i = 1; i < argc; ++i ) { 
       insertNode( &b, atoi(argv[i]));
@@ -23,7 +22,7 @@ for ( i = 1; i < argc; ++i ) {
    inOrder( b.root );
 
    // traverse the tree postOrder
-   printf("\nThe postnOrder traversal is:\n" );   
+   printf("\nThe postOrder traversal is:\n" );   
    postOrder( b.root );
 
    printf("\nThe printTree traversal is:\n");
